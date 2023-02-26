@@ -37,12 +37,15 @@
 }
 
 .cart2 > svg {
-  width: 30px;
-  height: 30px;
+  width: 3rem;
+  height: 3rem;
   background: #fff;
   padding: 10px;
   border-radius: 50%;
   border: 5px solid var(--black);
+}
+.cart2 > svg:hover {
+  box-shadow: var(--shadow1);
 }
 
 .signup {
@@ -54,6 +57,32 @@
   font-size: 0.8rem;
   border-radius: 15px;
   box-shadow: var(--shadow1);
+}
+
+.signup:hover {
+  box-shadow: 0 0 0 transparent;
+}
+
+.signup > :first-child {
+  display: block;
+  width: 6rem;
+}
+
+.signup > :nth-child(2) {
+  border-radius: 50%;
+  border: 1px solid skyblue;
+  display: flex;
+  width: 20px;
+  height: 20px;
+  align-items: center;
+  justify-content: center;
+  transition: all 150ms ease-in;
+}
+
+.signup > :nth-child(2):hover {
+  transform: scale(1.2);
+  cursor: pointer;
+  transform: translateX(30%);
 }
 
 .h_sides {
